@@ -7,31 +7,56 @@ main.addEventListener("mousemove" , function(dets) {
 
 })
 
-var overlay =document.querySelector (".overlay1");
-var img = document.querySelector (".word1 img");
-overlay.addEventListener ("mousemove" , function(dets){
-    img.style.left=(dets.x-250) + "px";
-    img.style.top=(dets.y-1100) + "px";
-    img.style.scale = 1
-    img.style.opacity = 1
+
+
+document.querySelector (".overlay1").addEventListener ("mousemove" , function(dets){
+    document.querySelector (".word1 img").style.left=(dets.x-250) + "px";
+    document.querySelector (".word1 img").style.top=(dets.y-1100) + "px";
+    document.querySelector (".word1 img").style.scale = 1
+    document.querySelector (".word1 img").style.opacity = 1
+    cursor.style.opacity = 0; 
 })
-// var overlay =document.querySelector (".overlay2");
-// var img = document.querySelector (".word2 img");
-// overlay.addEventListener ("mousemove" , function(dets){
-//     img.style.left=(dets.x) + "px";
-//     img.style.top=(dets.y) + "px";
-//     img.style.scale = 1
-//     img.style.opacity = 1
-// })
-// var overlay =document.querySelector (".overlay3");
-// var img = document.querySelector (".word3 img");
-// overlay.addEventListener ("mousemove" , function(dets){
-//     img.style.left=(dets.x) + "px";
-//     img.style.top=(dets.y) + "px";
-//     img.style.scale = 1
-//     img.style.opacity = 1
-// })
-overlay.addEventListener("mouseleave", function(dets) {
-    img.style.scale=0;
-    img.style.opacity = 0;
+
+document.querySelector (".overlay1").addEventListener("mouseleave", function(dets) {
+   document.querySelector (".word1 img").style.scale = 0;
+   document.querySelector (".word1 img").style.opacity = 0;
+   cursor.style.opacity = 1; 
   });
+
+
+
+
+  document.querySelector (".overlay2").addEventListener ("mousemove" , function(dets){
+    document.querySelector (".word2 img").style.left=(dets.x-2150) + "px";
+    document.querySelector (".word2 img").style.top=(dets.y-1100) + "px";
+    document.querySelector (".word2 img").style.scale = 1
+    document.querySelector (".word2 img").style.opacity = 1
+    cursor.style.opacity = 0;
+})
+
+document.querySelector (".overlay2").addEventListener("mouseleave", function(dets) {
+   document.querySelector (".word2 img").style.scale = 0;
+   document.querySelector (".word2 img").style.opacity = 0;
+   cursor.style.opacity = 1; 
+
+  });
+
+
+
+
+
+document.querySelector (".overlay3").addEventListener ("mousemove" , function(dets){
+    document.querySelector (".word3 img").style.left=(dets.x-4130) + "px";
+    document.querySelector (".word3 img").style.top=(dets.y-1130) + "px";
+    document.querySelector (".word3 img").style.scale = 1
+    document.querySelector (".word3 img").style.opacity = 1
+    cursor.style.opacity = 0;
+})
+
+document.querySelector (".overlay3").addEventListener("mouseleave", function(dets) {
+   document.querySelector (".word3 img").style.scale = 0;
+   document.querySelector (".word3 img").style.opacity = 0;
+   cursor.style.opacity = 1; 
+});
+
+

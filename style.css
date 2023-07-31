@@ -44,6 +44,29 @@ position: relative;
      transition:  linear 0.2s;
      
 }
+.word2 img{
+    width: 20vh;
+    border-radius: 50%;
+    height: 20vh;
+     position: absolute;
+    scale: 0;
+    left: 0%;
+     z-index: 1;
+     opacity: 1;
+     transition:  linear 0.2s;
+     
+}
+.word3 img{
+    width: 20vh;
+    border-radius: 50%;
+    height: 20vh;
+     position: absolute;
+    scale: 0;
+     z-index: 1;
+     opacity: 1;
+     transition:  linear 0.2s;
+     
+}
 
 #word h1{
     color: white;
@@ -52,6 +75,7 @@ position: relative;
     -webkit-text-stroke-width: 1px ;
     z-index: 2;
     mix-blend-mode: difference;
+    
 }
 
 #cursor{
@@ -61,12 +85,15 @@ position: relative;
     position: absolute;
     border-radius: 50%;
       transition: linear 0.1s;
+      z-index: 2;
+      opacity: 1;
 }
 
 #overlay{
     position: absolute;
     width: 30vw;
     height: 50vh;
-    background-color: rgba(0, 0, 0, 0.816);
+    background-color: rgba(0, 0, 0, 0);
+z-index: 2;
 }
 
