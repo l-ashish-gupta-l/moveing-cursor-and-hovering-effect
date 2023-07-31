@@ -2,7 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 html,body{
@@ -10,3 +10,63 @@ html,body{
     height: 100%;
     background-color: lightblue;
 }
+
+
+#main{
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+position: relative;
+
+}
+
+#word{
+    width: 30vw;
+    height: 30vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    position: relative;
+}
+
+#word img{
+    width: 20vh;
+    border-radius: 50%;
+    height: 20vh;
+     position: absolute;
+    scale: 0;
+     z-index: 1;
+     opacity: 1;
+     transition:  linear 0.2s;
+     
+}
+
+#word h1{
+    color: white;
+    font-size: 10vh;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px ;
+    z-index: 2;
+    mix-blend-mode: difference;
+}
+
+#cursor{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+      transition: linear 0.1s;
+}
+
+#overlay{
+    position: absolute;
+    width: 30vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.816);
+}
+
